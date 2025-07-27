@@ -20,8 +20,8 @@
 ## Profil
 
 <ul>
-  <li>Nama: {Aa Setya Wibawa}</li>
-  <li>NIM: {23552011386}</li>
+  <li>Nama: {Gilang Ramadhan Herdian}</li>
+  <li>NIM: {23552011436}</li>
   <li>Studi Kasus: {Aplikasi Absensi Perpustakaan Berbasis JavaFX}</li>
 </ul>
 
