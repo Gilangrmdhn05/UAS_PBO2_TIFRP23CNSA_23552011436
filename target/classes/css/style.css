@@ -1,0 +1,113 @@
+.root {
+    -fx-background-color: #fff4da;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.label-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.label-status {
+    -fx-font-size: 14px;
+    -fx-text-fill: #444444;
+}
+
+.label-welcome {
+    -fx-font-size: 48px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 6;
+    -fx-padding: 6;
+    -fx-font-size: 14px;
+}
+
+.flat-button {
+    -fx-background-color: #ff9900;
+    -fx-text-fill: white;
+    -fx-border-radius: 6;
+    -fx-padding: 6 12 6 12;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #666257;
+    -fx-text-fill: white;
+    -fx-border-radius: 6;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.desktop {
+    -fx-background-color: #FFF4DA;
+}
+
+/* Header & Footer */
+.header, .footer {
+    -fx-background-color: #666257;
+}
+
+/* Input */
+.input {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D9D9D9;
+    -fx-border-radius: 8;
+    -fx-font-family: "Inter";
+    -fx-font-size: 16px;
+    -fx-text-fill: #1E1E1E;
+    -fx-padding: 0 0 0 16;
+}
+
+/* Form container */
+.form-newsletter {
+    /* no visual styling; layout only */
+}
+
+/* Button utama: Absen */
+.absen-button {
+    -fx-background-color: #2C2C2C;
+    -fx-text-fill: #F5F5F5;
+    -fx-border-color: #2C2C2C;
+    -fx-border-radius: 8;
+    -fx-font-size: 16px;
+    -fx-font-family: "Inter";
+}
+
+/* Button lain (Tombol 2 dan 3) */
+.secondary-button {
+    -fx-background-color: #2C2C2C;
+    -fx-text-fill: #F5F5F5;
+    -fx-border-color: #2C2C2C;
+    -fx-border-radius: 8;
+    -fx-font-size: 16px;
+    -fx-font-family: "Inter";
+}
+
+.secondary-button {
+    -fx-background-color: #2C2C2C;   /* warna awal: hitam gelap */
+    -fx-text-fill: #F5F5F5;          /* font putih */
+    -fx-border-color: #2C2C2C;
+    -fx-border-radius: 8;
+    -fx-font-size: 16px;
+    -fx-font-family: "Inter";
+}
+
+.secondary-button:hover {
+    -fx-background-color: #2196F3;   /* warna biru saat hover */
+    -fx-text-fill: #FFFFFF;          /* tetap putih */
+    -fx-border-color: #2196F3;
+    -fx-cursor: hand;
+}
+
+.absen-button:hover {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #2196F3;
+    -fx-cursor: hand;
+}

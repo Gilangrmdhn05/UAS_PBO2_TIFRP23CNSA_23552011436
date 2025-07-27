@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.perpus.controller.AbsensiController"
+            styleClass="root">
+
+    <!-- Header -->
+    <AnchorPane prefHeight="234"
+                AnchorPane.topAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"
+                styleClass="header">
+        <StackPane prefHeight="234.0"
+                   AnchorPane.topAnchor="0.0"
+                   AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0">
+            <ImageView fx:id="logoView"
+                       fitHeight="120"
+                       preserveRatio="true"/>
+        </StackPane>
+    </AnchorPane>
+
+    <!-- Footer -->
+    <AnchorPane prefHeight="272"
+                AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"
+                styleClass="footer">
+        <StackPane prefHeight="272.0"
+                   AnchorPane.topAnchor="0.0"
+                   AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0">
+            <Label fx:id="welcomeLabel"
+                   text=""
+                   styleClass="label-welcome"/>
+        </StackPane>
+    </AnchorPane>
+
+    <!-- Konten Tengah -->
+    <StackPane AnchorPane.topAnchor="234.0"
+               AnchorPane.bottomAnchor="272.0"
+               AnchorPane.leftAnchor="0.0"
+               AnchorPane.rightAnchor="0.0">
+        <VBox spacing="15" alignment="CENTER">
+            <Label text="Absensi Pengunjung Perpustakaan" styleClass="label-title" />
+
+            <HBox spacing="15" alignment="CENTER">
+                <Label text="NIM / Email:" styleClass="label-status" />
+                <TextField fx:id="nimField"
+                           promptText="Masukkan NIM atau Email"
+                           styleClass="text-field input"
+                           prefWidth="300" prefHeight="35"/>
+                <Button text="Absen"
+                        onAction="#submitAbsensi"
+                        styleClass="absen-button"
+                        prefHeight="35" />
+            </HBox>
+
+            <Label fx:id="statusLabel" styleClass="label-status" />
+        </VBox>
+    </StackPane>
+
+    <Button fx:id="loginAdminButton"
+            text="Admin"
+            onAction="#openLoginPage"
+            styleClass="secondary-button"
+            visible="false"
+            AnchorPane.topAnchor="240.0"
+            AnchorPane.rightAnchor="20.0"
+            prefWidth="120" prefHeight="35"/>
+
+    <Button text="Registrasi"
+            onAction="#openRegisterDialog"
+            styleClass="secondary-button"
+            AnchorPane.bottomAnchor="272.0"
+            AnchorPane.rightAnchor="20.0"
+            prefWidth="120" prefHeight="35"/>
+</AnchorPane>
